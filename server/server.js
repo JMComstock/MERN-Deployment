@@ -8,5 +8,5 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
-require('./server/config/config.database');
-require('./server/routes/pet.routes')(app);
+require('./config/config.database');
+require('./routes/pet.routes')(app);
